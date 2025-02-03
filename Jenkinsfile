@@ -16,7 +16,6 @@ pipeline {
         stage('Setup Node.js & Expo') {
             steps {
                 bat 'npm install -g expo' // Installe Expo CLI
-                bat 'expo --version' // Vérifie qu'Expo fonctionne
             }
         }
 
