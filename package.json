@@ -12,8 +12,10 @@
     "lint": "expo lint"
   },
   "jest": {
-    "preset": "jest-expo"
-  },
+  "preset": "jest-expo",
+  "setupFilesAfterEnv": ["./jest.setup.js"]
+},
+
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-native-firebase/app": "^21.7.1",
@@ -48,6 +50,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.0.1",
+    "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",
     "@types/react-test-renderer": "^18.3.0",
